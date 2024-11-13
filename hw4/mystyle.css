@@ -1,0 +1,24 @@
+.red
+{
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+}
+.center 
+{
+    text-align: center;
+}
+.s2
+{
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+.s3
+{
+    color: blue;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: left;
+}
