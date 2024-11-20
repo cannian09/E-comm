@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 
 <head>
-  <title>110310134陳昕翰</title>
+  <title>110310134 陳昕翰</title>
   <meta name="description" content="free website template" />
   <meta name="keywords" content="enter your keywords here" />
   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -24,54 +24,72 @@
         $('#slider').nivoSlider();
     });
     </script>
-
+  <script>
+    function show(){
+      var name = document.getElementById("name").value;
+      var item = document.getElementById("item").value;
+      var address = document.getElementById("address").value;
+      document.getElementById("t1").innerText="你的姓名是"+name+"，購買物品是"+item+"，地址是"+address
+    }
+  </script>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NDC4VVNERH"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2R32L986BY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'G-NDC4VVNERH');
+    gtag('config', 'G-2R32L986BY');
   </script>
-
 </head>
 
 <body>
   <div id="main">	
-    <div id="site_content">  
-	  <div id="menubar">
-        <ul class="lavaLampWithImage" id="lava_menu">
-          <li class="current"><a href="index.html">首頁</a></li>
-          <li><a href="a1.html">第一題</a></li>
-          <li><a href="a2.html">第二題</a></li>
-          <li><a href="a3.html">第三題</a></li>
-          <li><a href="a4.html">GSC圖片</a></li>
-          <li><a href="a5.html">GA圖片</a></li>
-          <li><a href="a6.html">挑戰題</a></li>
-        </ul>
-	  </div><!--close menubar-->
-      <div id="header">  
-        <h1>Blue <span>Ripples</span></h1>	
-	    <h2>Company Slogan Goes Here</h2>
+	<div id="menubar">
+      <ul class="lavaLampWithImage" id="lava_menu">
+        <li class="current"><a href="index.html">首頁</a></li>
+        <li><a href="a1.html">第一題</a></li>
+        <li><a href="a2.html">第二題</a></li>
+        <li><a href="a3.html">第三題</a></li>
+        <li><a href="a4.html">第四題</a></li>
+        <li><a href="a5.html">GSC圖片</a></li>
+        <li><a href="a6.html">GA圖片</a></li>
+      </ul>
+	</div><!--close menubar-->	    
+	<div id="site_content">        	  
+	  <div id="header"> 
+        <div id="header_name"> 	  
+          <h1>陳昕翰，作業11</h1>
+        </div><!--close header_name-->	
+        <div id="header_slogan"> 		
+	      <h2>Company Slogan Goes Here</h2>
+		 </div><!--close header_slogan-->	
       </div><!--close header-->	
 	  <div id="banner_image">
 	    <div id="slider-wrapper">        
           <div id="slider" class="nivoSlider">
             <img src="images/slide1.jpg" alt="" />
             <img src="images/slide2.jpg" alt="" />
-            <img src="images/slide3.jpg" alt="" />
-		  </div><!--close slider-->
+		  </div>
 		</div><!--close slider-wrapper-->
-	  </div><!--close banner_image-->		  
+	  </div><!--close banner_image-->			  
       <div id="content">
         <div class="content_item">
-          <h1 class="s4">GSC圖片</h1>
+          <h1 class="s1 center">網路購物</h1>
           <hr>
+          <span class="s4">姓名</span>
+          <input id="name" type="text" class="s3" width="50%">
           <br>
-          <p>
-            <a class="s3" href="https://vendor.ecpay.com.tw/User/LogOn_Step1" target="_blank">下單購買(綠界金流ECpay)</a>
-          </p>
+          <span class="s4">購買物品</span>
+          <input id="item" type="text" class="s3" width="50%">
+          <br>
+          <span class="s4">地址</span>
+          <input id="address" type="text" class="s3" width="50%">
+          <br>
+          <input type="button" value="購買" class="s2" onclick="show()">
+          <br>
+          <p id="t1" class="s2"></p>
+
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
           <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
@@ -111,6 +129,7 @@
       </div><!--close content-->	
     </div><!--close site_content-->	
     <div id="footer">  
+	  <div id="footer_content"> 
       版權所有，&copy; designed by 陳昕翰 2024
     </div><!--close footer-->	
   </div><!--close main-->	
