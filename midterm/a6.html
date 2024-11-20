@@ -34,7 +34,24 @@
 
     gtag('config', 'G-NDC4VVNERH');
   </script>
+  <script>
+    function changeFontSize() {
+      // 獲取 input 和 p 元素
+      const input = document.getElementById("inputNumber");
+      const message = document.getElementById("message");
+      
+      // 解析輸入的數字
+      const fontSize = parseInt(input.value);
+      
+      // 檢查輸入的是否是有效數字，並且設定 p 文字的字體大小
+      if (!isNaN(fontSize) && fontSize > 0) {
+        message.style.fontSize = fontSize + "px";  // 設定字體大小
+      } else {
+        message.style.fontSize = "16px";  // 若輸入無效，恢復預設字體大小
+      }
+    }
 
+  </script>
 </head>
 
 <body>
@@ -66,7 +83,12 @@
 	  </div><!--close banner_image-->		  
       <div id="content">
         <div class="content_item">
-          <h1>Welcome to your website</h1>
+          <h1 class="s4">挑戰題</h1>
+          <hr>
+          <br>
+          <span class="s3">輸入數字：</span>
+          <input type="text" class="s2" size="5" id="inputNumber" oninput="changeFontSize()">
+          <p class="s2" id="message">生日快樂</p>          
           <p>This standards compliant, simple, fixed width website template is released as an 'open source' design (under the Creative Commons Attribution 3.0 Licence), which means that you are free to download and use it for anything you want (including modifying and amending it). If you wish to remove the 'ARaynorDesign' link in the footer of the template, please contact me first, but other than that...</p>
           <h3>Place your heading here</h3>
           <div style="width:200px; float:left; padding: 0px 20px 10px 0px;"><img alt="image" src="images/image.jpg" /></div>
